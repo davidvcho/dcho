@@ -1,5 +1,8 @@
 import {Router} from "pages/router";
+import {ThemeProvider} from "common/components/themes/theme-provider";
 
 export const App = () => (
-  <Router />
+  <ThemeProvider>
+    <Router />
+  </ThemeProvider>
 );

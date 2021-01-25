@@ -2,8 +2,10 @@ import React from "react";
 
 export const Logo = React.memo(
   ({
+    className,
      color
    }: {
+    className: string;
     color: string;
   }): JSX.Element => {
     return (
@@ -15,6 +17,7 @@ export const Logo = React.memo(
         viewBox="0 0 856.000000 853.000000"
         preserveAspectRatio="xMidYMid meet"
         role="img"
+        className={className}
       >
         <title>David Cho Logo</title>
         <desc>An illustrated D in the shape of a camera lens aperture ring.</desc>

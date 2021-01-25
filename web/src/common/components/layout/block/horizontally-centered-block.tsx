@@ -1,6 +1,6 @@
 import React from "react";
-import {Block} from "common/components/layout/block/block";
+import {Block, Props} from "common/components/layout/block/block";
 
-export const HorizontallyCenteredBlock: React.FC = ({children}) => {
-  return <Block margin="auto"><div>{children}</div></Block>;
-};
+export const HorizontallyCenteredBlock: React.FC<Props> = React.forwardRef((props, ref) => {
+  return <Block {...props} margin="auto" ref={ref}><div>{props.children}</div></Block>;
+});

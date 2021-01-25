@@ -5,7 +5,7 @@ export const Logo = React.memo(
     className,
      color
    }: {
-    className: string;
+    className?: string;
     color: string;
   }): JSX.Element => {
     return (

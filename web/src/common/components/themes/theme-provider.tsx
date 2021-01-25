@@ -1,16 +1,16 @@
-import React, {createContext, Dispatch, useMemo, useState} from "react";
+import React, {createContext, Dispatch, useContext, useMemo, useState} from "react";
 import { Client as Styletron } from "styletron-engine-atomic";
 import { BaseProvider } from "baseui";
 import { Provider as StyletronProvider } from "styletron-react";
-import {lightTheme} from "common/components/themes/light-theme";
 import {darkTheme} from "common/components/themes/dark-theme";
+import {lightTheme} from "common/components/themes/light-theme";
 
-enum Theme {
+export enum Theme {
   DARK,
   LIGHT,
 }
 
-const THEME_MAPPING= {
+export const THEME_MAPPING= {
   [Theme.DARK]: darkTheme,
   [Theme.LIGHT]: lightTheme,
 }
@@ -24,6 +24,8 @@ const ThemeContext = createContext<ThemeContextProps>({
   setTheme: _ => {},
   theme: Theme.LIGHT,
 });
+
+export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider: React.FC = ({children}) => {
   const [theme, setTheme] = useState(Theme.LIGHT);

@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  height: 100%;
+  margin: auto;
+  max-width: 400px;
+  width: 80%;
+  transition: all 1s;
+  transform-origin: 50% 50%;
+
+  &:hover {
+    animation: resize 2s infinite alternate;
+  }
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}

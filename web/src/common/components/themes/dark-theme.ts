@@ -1,11 +1,9 @@
 import { createTheme, darkThemePrimitives } from "baseui";
 
 const primitives = {
-  ...darkThemePrimitives
+  ...darkThemePrimitives,
 };
 
-const overrides = {
-
-};
+const overrides = {};
 
 export const darkTheme = createTheme(primitives, overrides);

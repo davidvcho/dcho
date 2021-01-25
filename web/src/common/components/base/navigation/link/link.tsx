@@ -20,10 +20,10 @@ type ReactRouterLinkProps = {
 // see https://github.com/ReactTraining/react-router/issues/7598
 // see https://github.com/ReactTraining/react-router/pull/7409
 const BaseLinkForReactRouter: React.FC<ReactRouterLinkProps> = ({
-                                                                  children,
-                                                                  href,
-                                                                  navigate,
-                                                                }) => (
+  children,
+  href,
+  navigate,
+}) => (
   <BaseLink
     href={href}
     // copies the implementation of onClick from https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/modules/Link.js#L21

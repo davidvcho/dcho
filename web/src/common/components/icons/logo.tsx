@@ -5,9 +5,9 @@ type LogoProps = { color?: string };
 
 export const Logo = React.memo(
   ({
-     className = "",
-     color = "#000000"
-   }: PropsWithClass<LogoProps>): JSX.Element => {
+    className = "",
+    color = "#000000",
+  }: PropsWithClass<LogoProps>): JSX.Element => {
     return (
       <svg
         version="1.0"

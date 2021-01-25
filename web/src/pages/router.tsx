@@ -1,8 +1,8 @@
 import React from "react";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import {HomePage} from "pages/home/home-page";
-import {AboutPage} from "pages/about/about-page";
+import { HomePage } from "pages/home/home-page";
+import { AboutPage } from "pages/about/about-page";
 
 export const Router: React.FC = () => (
   <BrowserRouter>

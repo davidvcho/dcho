@@ -7,12 +7,21 @@ import {
   ALIGN as BASE_ALIGN,
 } from "baseui/header-navigation";
 
-export const HeaderNavigation: React.FC<BaseHeaderNavigationProps> = (props) => {
-  return <BaseHeaderNavigation  {...props} overrides={{Root: {
-      style: () => ({
-        "border-bottom-style": "none",
-      }),}
-  }} />;
+export const HeaderNavigation: React.FC<BaseHeaderNavigationProps> = (
+  props
+) => {
+  return (
+    <BaseHeaderNavigation
+      {...props}
+      overrides={{
+        Root: {
+          style: () => ({
+            "border-bottom-style": "none",
+          }),
+        },
+      }}
+    />
+  );
 };
 
 export const NavigationList = BaseNavigationList;

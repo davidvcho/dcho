@@ -3,8 +3,8 @@ import React from "react";
 export const Logo = React.memo(
   ({
     className,
-     color
-   }: {
+    color,
+  }: {
     className?: string;
     color: string;
   }): JSX.Element => {
@@ -20,7 +20,9 @@ export const Logo = React.memo(
         className={className}
       >
         <title>David Cho Logo</title>
-        <desc>An illustrated D in the shape of a camera lens aperture ring.</desc>
+        <desc>
+          An illustrated D in the shape of a camera lens aperture ring.
+        </desc>
         <g
           transform="translate(0.000000,853.000000) scale(0.100000,-0.100000)"
           fill={color}

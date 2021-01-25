@@ -1,11 +1,9 @@
 import { createTheme, lightThemePrimitives } from "baseui";
 
 const primitives = {
-...lightThemePrimitives,
+  ...lightThemePrimitives,
 };
 
-const overrides = {
-
-};
+const overrides = {};
 
 export const lightTheme = createTheme(primitives, overrides);

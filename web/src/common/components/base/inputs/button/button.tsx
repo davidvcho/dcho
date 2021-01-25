@@ -7,7 +7,10 @@ export enum Kind {
   MINIMAL = "minimal",
 }
 
-type Props = Pick<ButtonProps, "disabled" | "isLoading" | "onClick" | "size"> & {
+type Props = Pick<
+  ButtonProps,
+  "disabled" | "isLoading" | "onClick" | "size"
+> & {
   kind?: Kind;
   // force a choice of type to avoid defaulting to submit
   type: "button" | "reset" | "submit";

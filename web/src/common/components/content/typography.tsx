@@ -36,7 +36,7 @@ import {
   MonoParagraphMedium as BaseMonoParagraphMedium,
   MonoParagraphSmall as BaseMonoParagraphSmall,
   MonoParagraphXSmall as BaseMonoParagraphXSmall,
-} from 'baseui/typography';
+} from "baseui/typography";
 
 export const DisplayLarge = BaseDisplayLarge;
 export const DisplayMedium = BaseDisplayMedium;

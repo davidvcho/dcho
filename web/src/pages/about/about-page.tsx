@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "pages/shared/header";
 import { Heading, HeadingLevel } from "common/components/content/heading";
 import { ParagraphMedium } from "common/components/content/typography";
+import { Block } from "common/components/layout/block/block";
 
 export const AboutPage: React.FC = () => {
   return (
@@ -12,6 +13,14 @@ export const AboutPage: React.FC = () => {
         <ParagraphMedium>
           Hi, I'm David Cho — a New Yorker passionate about programming,
           photography, and powerlifting.
+          <Block marginTop="24px">
+            <img
+              alt="It's me, David Cho"
+              height={236.86}
+              width={200}
+              src="/images/pages/about/me.jpg"
+            />
+          </Block>
         </ParagraphMedium>
 
         <HeadingLevel>

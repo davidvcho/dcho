@@ -3,6 +3,7 @@ import { Header } from "pages/shared/header";
 import { Heading, HeadingLevel } from "common/components/content/heading";
 import { ParagraphMedium } from "common/components/content/typography";
 import { Block } from "common/components/layout/block/block";
+import { Photographer } from "pages/about/photographer";
 
 export const AboutPage: React.FC = () => {
   return (
@@ -41,6 +42,7 @@ export const AboutPage: React.FC = () => {
             photography. It’s a field so technical, yet so imaginative — it has
             me chasing light, perspective, and shadow to achieve perfection.
           </ParagraphMedium>
+          <Photographer />
         </HeadingLevel>
 
         <HeadingLevel>

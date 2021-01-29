@@ -38,27 +38,30 @@ const ThemeToggler: React.FC = () => {
 export const Header: React.FC = () => {
   return (
     <HeaderNavigation>
-      <NavigationList $align={ALIGN.left}>
-        <NavigationItem>
-          <Link href="/">
-            <VerticallyCentered columnGap="16px">
-              <Logo color="black" className={styles.logo} />
-              <span>David Cho</span>
-            </VerticallyCentered>
-          </Link>
-        </NavigationItem>
-      </NavigationList>
-      <NavigationList $align={ALIGN.center} />
-      <Block paddingRight="24px" display="inherit">
-        <NavigationList $align={ALIGN.right}>
-          <NavigationItem>About</NavigationItem>
-          <NavigationItem>Blog</NavigationItem>
-          <NavigationItem>Contact</NavigationItem>
+      <Block marginLeft="-24px">
+        <NavigationList $align={ALIGN.left}>
           <NavigationItem>
-            <ThemeToggler />
+            <Link href="/">
+              <VerticallyCentered columnGap="16px">
+                <Logo color="black" className={styles.logo} />
+                <span>David Cho</span>
+              </VerticallyCentered>
+            </Link>
           </NavigationItem>
         </NavigationList>
       </Block>
+
+      {/* Fill in the space in between to ensure before/after are floated to the edge. */}
+      <NavigationList $align={ALIGN.center} />
+
+      <NavigationList $align={ALIGN.right}>
+        <NavigationItem>About</NavigationItem>
+        <NavigationItem>Blog</NavigationItem>
+        <NavigationItem>Contact</NavigationItem>
+        <NavigationItem>
+          <ThemeToggler />
+        </NavigationItem>
+      </NavigationList>
     </HeaderNavigation>
   );
 };

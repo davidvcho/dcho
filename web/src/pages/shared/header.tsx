@@ -10,7 +10,6 @@ import { Button, Kind } from "common/components/base/inputs/button/button";
 import { Link } from "common/components/base/navigation/link/link";
 import styles from "pages/shared/header.module.scss";
 import { Logo } from "common/components/icons/logo";
-import { VerticallyCentered } from "common/components/layout/centering/vertically-centered";
 import { Block } from "common/components/layout/block/block";
 
 const MOON_SRC =
@@ -42,10 +41,7 @@ export const Header: React.FC = () => {
         <NavigationList $align={ALIGN.left}>
           <NavigationItem>
             <Link href="/">
-              <VerticallyCentered columnGap="16px">
-                <Logo color="black" className={styles.logo} />
-                <span>David Cho</span>
-              </VerticallyCentered>
+              <Logo color="black" className={styles.logo} />
             </Link>
           </NavigationItem>
         </NavigationList>

@@ -6,7 +6,7 @@ import styles from "pages/home/home-page.module.scss";
 
 export const HomePage: React.FC = () => {
   return (
-    <CenteredBlock height="100vh">
+    <CenteredBlock marginTop="15vh">
       <Link href={"https://www.google.com"}>
         <Logo className={styles.logo} color="black" />
       </Link>

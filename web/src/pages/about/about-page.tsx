@@ -4,10 +4,11 @@ import { Heading, HeadingLevel } from "common/components/content/heading";
 import { ParagraphMedium } from "common/components/content/typography";
 import { Block } from "common/components/layout/block/block";
 import { Photographer } from "pages/about/photographer";
+import { PageLayout } from "pages/shared/page-layout";
 
 export const AboutPage: React.FC = () => {
   return (
-    <>
+    <PageLayout>
       <Header />
       <HeadingLevel>
         <Heading>About Me</Heading>
@@ -61,6 +62,6 @@ export const AboutPage: React.FC = () => {
           </ParagraphMedium>
         </HeadingLevel>
       </HeadingLevel>
-    </>
+    </PageLayout>
   );
 };

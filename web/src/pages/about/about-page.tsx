@@ -4,6 +4,7 @@ import { ParagraphMedium } from "common/components/content/typography";
 import { Block } from "common/components/layout/block/block";
 import { Photographer } from "pages/about/photographer";
 import { PageLayout } from "pages/shared/page-layout";
+import { Programmer } from "pages/about/programmer";
 
 export const AboutPage: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ export const AboutPage: React.FC = () => {
             and pushes the boundaries to{" "}
             <strong>make the impossible possible</strong>.
           </ParagraphMedium>
+          <Programmer />
         </HeadingLevel>
 
         <HeadingLevel>

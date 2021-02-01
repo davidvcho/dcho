@@ -5,7 +5,6 @@ import { Link as ReactRouterLink } from "react-router-dom";
 
 type Props = {
   href: string;
-  target?: "_blank";
 };
 
 type ReactRouterLinkProps = {
@@ -46,7 +45,7 @@ const BaseLinkForReactRouter: React.FC<ReactRouterLinkProps> = ({
 
 // Note: this is a react-router aware component.
 // It assumes you are using react-router for all relative links.
-export const Link: React.FC<Props> = ({ children, href, target }) => {
+export const Link: React.FC<Props> = ({ children, href }) => {
   // assume all hrefs with leading slash are internal
   if (startsWith(href, "/")) {
     return (
@@ -55,6 +54,7 @@ export const Link: React.FC<Props> = ({ children, href, target }) => {
       </ReactRouterLink>
     );
   }
+  const target = "_blank";
   return (
     <BaseLink
       href={href}

@@ -8,7 +8,11 @@ export const LifeOfASwe: React.FC = () => {
     <PageLayout>
       <HeadingLevel>
         <Heading>Life of a Software Engineer</Heading>
-        <ParagraphMedium>TODO</ParagraphMedium>
+        <ParagraphMedium>
+          Having been a SWE (software engineer) for the past 5 years, I thought
+          I'd share what my experience has been like and what it's really like
+          to be a SWE.
+        </ParagraphMedium>
       </HeadingLevel>
     </PageLayout>
   );
